@@ -7,8 +7,9 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item to="Web">Web</b-nav-item>
-        <b-nav-item href="#">Portfolio</b-nav-item>
+        <b-nav-item href="#services">Photo</b-nav-item>
+        <b-nav-item href="#webb">Web</b-nav-item>
+        <b-nav-item href="#portfolio">Portfolio</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->

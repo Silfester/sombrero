@@ -188,6 +188,7 @@
           <p class="subscribe-text">V prípade otázok ma môžete nájsť, prípadne dať follow, na nasledujúcich odkazoch:</p>
 
         </div>
+        <Subscribe />
 
         <div id="sociallogo">
 
@@ -369,13 +370,14 @@
 import Logo from '~/components/Logo.vue'
 import Carousel from '~/components/Carousel.vue'
 import Navbar from '~/components/Navbar.vue'
-
+import Subscribe from '~/components/Subscribe.vue'
 
 export default {
   components: {
     Logo,
     Carousel,
-    Navbar
+    Navbar,
+    Subscribe
     
   },
 items: [
