@@ -47,7 +47,8 @@
         <b-row>
 
           <div class="w-100"></div>
-          <b-col>Lightbox</b-col>
+          
+            <b-col><CoolLightBox /></b-col>
           <b-col>
             <h3 align="center">Ponúkam profestionálne služby</h3>
 
@@ -225,7 +226,14 @@
 
   <section id="services">
 
-    <div class="container wow fadeInUp">
+    <div class="container wow fadeInUp"     data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
 
       <div class="row">
 
@@ -355,8 +363,9 @@
         </div>
 
       </div>
-
+<GLightbox />
     </div>
+    
 
   </footer>
 
@@ -364,9 +373,11 @@
 
 </div>
 
+
 </template>
 
 <script>
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 import Logo from '~/components/Logo.vue'
 import Carousel from '~/components/Carousel.vue'
 import Navbar from '~/components/Navbar.vue'
@@ -378,18 +389,23 @@ export default {
     Carousel,
     Navbar,
     Subscribe
-    
   },
-items: [
-        'https://cosmos-images2.imgix.net/file/spina/photo/20565/191010_nature.jpg?ixlib=rails-2.1.4&auto=format&ch=Width%2CDPR&fit=max&w=835',
+    data: function () {
+    return {
+      items: [
+        ('../_nuxt/static/hero-bg.jpg'),
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*',
       ],
       index: null
-
+    };
+  },
 };
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .section {
   margin: 0 auto;
   min-height: 100vh;
