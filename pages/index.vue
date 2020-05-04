@@ -406,7 +406,7 @@ export default {
 html {
   scroll-behavior: smooth;
 }
-.section {
+.section  {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
